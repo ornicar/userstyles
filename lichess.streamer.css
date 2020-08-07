@@ -1,12 +1,13 @@
 /* ==UserStyle==
 @name           Lichess Streamer Layout
 @namespace      github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.streamer.css
 @version        1.0.0
 @description    On lichess.org games, Puts usernames and blocks around board for easier screen capture
-@author         Thibault
+@author         github.com/ornicar
 ==/UserStyle== */
 
-@-moz-document regexp("https://lichess\\.org/\w{8,12}") {
+@-moz-document domain("lichess.org") {
 
 @media (min-width: 800px), (orientation: landscape) {
   .round__app {
