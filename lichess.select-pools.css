@@ -7,10 +7,13 @@
 @author         github.com/ornicar
 ==/UserStyle== */
 
+/* all pools disabled by default */
 .lpools > div {
     opacity: 0.3;
     pointer-events: none;
 }
+
+/* pools to enable */
 .lpools [data-id="1+0"],
 .lpools [data-id="3+0"] {
     opacity: 1;
