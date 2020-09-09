@@ -13,7 +13,9 @@
 #top .site-buttons a[title="Moderation"],
 .mod-zone-toggle,
 .upt__mod,
-.mchat__messages .mod {
+.mchat__messages .mod,
+.forum-topic__actions > div > form,
+.forum-post__metas .mod {
   display: none !important;
 }
 
