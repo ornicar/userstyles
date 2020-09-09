@@ -1,8 +1,9 @@
 /* ==UserStyle==
 @name           Lichess Stealth Mode
-@namespace      StylishThemes
+@namespace      https://github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.stealth.css
 @version        1.0.0
+@license        MIT
 @description    On lichess.org, fade out the playing board, and hide it when not mouse hovered.
 @author         github.com/ornicar
 ==/UserStyle== */
