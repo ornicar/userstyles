@@ -8,6 +8,8 @@
 @author         github.com/ornicar
 ==/UserStyle== */
 
+@-moz-document domain("lichess.org") {
+
 /* all pools disabled by default */
 .lpools > div {
     opacity: 0.3;
@@ -19,4 +21,6 @@
 .lpools > [data-id="3+0"] {
     opacity: 1;
     pointer-events: auto;
+}
+
 }
