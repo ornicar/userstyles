@@ -1,13 +1,12 @@
 /* ==UserStyle==
 @name           Lichess Streamer Layout
-@namespace      github.com/ornicar/userstyles
+@namespace      https://github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.streamer.css
 @version        1.0.0
-@description    On lichess.org games, puts usernames and clocks around board for easier screen capture
+@license        MIT
+@description    On lichess.org, puts usernames and clocks around board for easier screen capture
 @author         github.com/ornicar
 ==/UserStyle== */
-
-@-moz-document domain("lichess.org") {
 
 @media (min-width: 800px), (orientation: landscape) {
   .round__app {
