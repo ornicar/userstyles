@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Lichess Hide moderation UI
+@namespace      github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.mod-vacation.css
+@version        1.0.0
+@description    On lichess.org, hide all moderation UI
+@author         github.com/ornicar
+==/UserStyle== */
+
+#top .site-buttons a[title="Moderation"],
+.mod-zone-toggle,
+.upt__mod,
+.mchat__messages .mod {
+    display: none !important;
+}
