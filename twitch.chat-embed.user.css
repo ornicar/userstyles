@@ -1,0 +1,19 @@
+/* ==UserStyle==
+@name           Twitch Chat without the crap
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/twitch.chat-embed.user.css
+@version        1.0.0
+@license        MIT
+@description    On https://www.twitch.tv/embed/ornicar2/chat, hide superfluous elements
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("www.twitch.tv") {
+
+.chat-room__content > .tw-z-default:first-child,
+.stream-chat-header,
+.chat-input__buttons-container.tw-flex {
+    display: none !important;
+}
+
+}
