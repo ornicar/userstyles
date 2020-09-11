@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Lichess without round shapes
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.no-round-shapes.user.css
+@version        1.0.0
+@license        MIT
+@description    On lichess.org, hide arrows and circle shapes on round boards.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("lichess.org") {
+
+.round__app cg-container svg {
+  display: none;
+}
+
+}
