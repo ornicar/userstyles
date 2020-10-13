@@ -2,7 +2,7 @@
 @name           Lichess Dark board
 @namespace      https://github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.dark-board.user.css
-@version        1.0.0
+@version        1.0.1
 @license        MIT
 @description    On lichess.org, make the board darker when dark background is selected
 @author         github.com/ornicar
@@ -16,7 +16,7 @@
   }
 
   body.dark cg-board {
-    background: rgba(0, 0, 0, var(--dark-factor));
+    background-color: rgba(0, 0, 0, var(--dark-factor));
     background-blend-mode: darken;
   }
 
