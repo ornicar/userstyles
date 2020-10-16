@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name           Lichess Dark Board Factor
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.dark-board-factor.user.css
+@version        1.0.0
+@license        MIT
+@description    On lichess.org, configure the dark board theme darkness factor.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("lichess.org") {
+
+body.dark-board {
+  --dark-factor: 0.6; /* set any value from 0 (like dark theme) to 1 (pitch black) */
+}
+
+}
