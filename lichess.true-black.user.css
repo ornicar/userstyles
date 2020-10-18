@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           Lichess True Black
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.true-black.user.css
+@version        1.0.0
+@license        MIT
+@description    On lichess.org, use a truely black background for screen energy saving.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("lichess.org") {
+
+body.dark,
+body.dark .lobby__app__content,
+body.dark .box {
+  background: #000;
+  color: #bbb;
+}
+.slist tbody tr:nth-child(even) {
+    background: hsl(30, 4%, 8%);
+}
+
+}
