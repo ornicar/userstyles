@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           Twitch stream manager without the crap
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/twitch.stream-manager.user.css
+@version        1.0.0
+@license        MIT
+@description    On https://dashboard.twitch.tv/u/ornicar2/stream-manager, hide superfluous elements
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("dashboard.twitch.tv") {
+  .tw-z-default,
+  .mosaic-root .mosaic-tile:last-child,
+  .mosaic-root .mosaic-split {
+    display: none !important;
+  }
+
+  .mosaic-root .mosaic-tile:nth-child(3) {
+    right: 0;
+  }
+}
