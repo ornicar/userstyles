@@ -16,6 +16,7 @@
     font-size: 1.1em;
   }
   h1.site-title a,
+  h1.site-title a:hover,
   h1.site-title a span {
     color: transparent !important;
     text-shadow: none;
