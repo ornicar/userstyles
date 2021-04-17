@@ -1,0 +1,22 @@
+/* ==UserStyle==
+@name           Lichess Remembers ChessCube
+@namespace      github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.remember-chesscube.user.css
+@version        1.0.0
+@description    On lichess.org, pay tribute to chesscube by showing their logo.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("lichess.org") {
+  h1.site-title a {
+    background-image: url('https://i.imgur.com/0BMGOmg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    font-size: 1.1em;
+  }
+  h1.site-title a,
+  h1.site-title a span {
+    color: transparent !important;
+  }
+}
