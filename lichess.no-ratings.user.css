@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Lichess No Ratings
+@namespace      github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.no-ratings.user.css
+@version        1.0.0
+@description    On lichess.org, hide players ratings. We are not our Glicko number!
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("lichess.org") {
+  rating {
+    display: none;
+  }
+}
