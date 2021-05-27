@@ -9,11 +9,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.twitch.tv") {
-
-.chat-room__content > .tw-z-default:first-child,
-.stream-chat-header,
-.chat-input__buttons-container.tw-flex {
+  .chat-room__content > div:first-child,
+  .stream-chat-header,
+  .chat-input__buttons-container.tw-flex {
     display: none !important;
-}
-
+  }
 }
