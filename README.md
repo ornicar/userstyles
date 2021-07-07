@@ -1,7 +1,6 @@
-My collection of user styles, since userstyles.org is down
+# Lichess userstyles
 
 Also see: https://lichess.org/page/extend
-
 
 ## Usage
 
