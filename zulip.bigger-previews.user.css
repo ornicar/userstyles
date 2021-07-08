@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           Zulip bigger previews
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/zulip.bigger-previews.user.css
+@version        1.0.0
+@license        MIT
+@description    In a zulip server, show bigger image previews. Change the @-moz-document domain to yours.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("hq.lichess.ovh") {
+  .rendered_markdown .message_inline_image,
+  .rendered_markdown .twitter-image {
+    height: 300px;
+  }
+}
