@@ -1,0 +1,14 @@
+/* This is for the zulip desktop app. 
+   File > Desktop Settings > General > Advanced > Add custom CSS */
+
+/* within text, or multiple emojis: a bit bigger (than 20px) */
+.rendered_markdown .emoji {
+  height: 24px;
+  width: 24px;
+}
+
+/* standalone emoji: a lot bigger (than 20px) */
+.rendered_markdown .emoji:first-child:last-child {
+  height: 40px;
+  width: 40px;
+}
