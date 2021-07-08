@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name           Zulip bigger emojis
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/zulip.bigger-emojis.user.css
+@version        1.0.0
+@license        MIT
+@description    In a zulip server, show bigger emojis. Change the @-moz-document domain to yours.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("hq.lichess.ovh") {
+  /* within text, or multiple emojis: a bit bigger (than 20px) */
+  .rendered_markdown .emoji {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* standalone emoji: a lot bigger (than 20px) */
+  .rendered_markdown .emoji:first-child:last-child {
+    height: 40px;
+    width: 40px;
+  }
+}
