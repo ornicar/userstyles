@@ -31,5 +31,5 @@ body.night-mode .column-middle,
 body.night-mode .column-right .right-sidebar,
 body.night-mode .floating_recipient .message-header-wrapper,
 body.night-mode .header-main {
-  background-color: hsl(211deg 27% 15%);
+  background-color: hsl(211deg 27% 15%) !important;
 }
