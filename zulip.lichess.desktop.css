@@ -1,4 +1,6 @@
-/* In a zulip server, show bigger emojis.
+/* 
+- show bigger emojisn
+- show bigger image previews
 
 This is for the zulip desktop app. 
 File > Desktop Settings > General > Advanced > Add custom CSS
@@ -10,8 +12,8 @@ File > Desktop Settings > General > Advanced > Add custom CSS
   width: 24px;
 }
 
-/* standalone emoji: a lot bigger (than 20px) */
-.rendered_markdown .emoji:first-child:last-child {
-  height: 40px;
-  width: 40px;
+/* bigger image previews */
+.rendered_markdown .message_inline_image,
+.rendered_markdown .twitter-image {
+  height: 300px;
 }
