@@ -1,5 +1,8 @@
-/* This is for the zulip desktop app. 
-   File > Desktop Settings > General > Advanced > Add custom CSS */
+/* In a zulip server, show bigger emojis.
+
+This is for the zulip desktop app. 
+File > Desktop Settings > General > Advanced > Add custom CSS
+*/
 
 /* within text, or multiple emojis: a bit bigger (than 20px) */
 .rendered_markdown .emoji {

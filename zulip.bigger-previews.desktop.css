@@ -1,0 +1,10 @@
+/* In a zulip server, show bigger image previews.
+
+This is for the zulip desktop app. 
+File > Desktop Settings > General > Advanced > Add custom CSS
+*/
+
+.rendered_markdown .message_inline_image,
+.rendered_markdown .twitter-image {
+  height: 300px;
+}
