@@ -17,3 +17,19 @@ File > Desktop Settings > General > Advanced > Add custom CSS
 .rendered_markdown .twitter-image {
   height: 300px !important;
 }
+
+/* darker night mode */
+body.night-mode,
+body.night-mode #compose,
+body.night-mode #message_view_header_underpadding,
+body.night-mode #settings_page .form-sidebar,
+body.night-mode #settings_page .right,
+body.night-mode #subscription_overlay .right,
+body.night-mode .app-main,
+body.night-mode .column-left .left-sidebar,
+body.night-mode .column-middle,
+body.night-mode .column-right .right-sidebar,
+body.night-mode .floating_recipient .message-header-wrapper,
+body.night-mode .header-main {
+  background-color: hsl(211deg 27% 15%);
+}
