@@ -14,7 +14,8 @@ File > Desktop Settings > General > Advanced > Add custom CSS
 
 /* bigger image previews */
 .rendered_markdown .message_inline_image:not(.youtube-video) {
-  height: 300px !important;
+  height: auto !important;
+  max-height: 320px !important;
 }
 
 /* darker night mode */
