@@ -12,5 +12,6 @@
   .rendered_markdown .message_inline_image:not(.youtube-video) {
     height: auto !important;
     max-height: 320px !important;
+    display: flex !important;
   }
 }
