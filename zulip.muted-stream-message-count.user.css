@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name           Zulip muted stream message count
+@namespace      https://github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/zulip.muted-stream-message-count.user.css
+@version        1.0.0
+@license        MIT
+@description    In a zulip server, hide message count of muted streams. Change the @-moz-document domain to yours.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("hq.lichess.ovh") {
+  ul.filters li.out_of_home_view:not(.active-filter) .stream-with-count .unread_count {
+    display: none !important;
+  }
+}

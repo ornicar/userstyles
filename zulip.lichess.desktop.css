@@ -34,3 +34,8 @@ body.night-mode .floating_recipient .message-header-wrapper,
 body.night-mode .header-main {
   background-color: hsl(211deg 27% 15%) !important;
 }
+
+/* hide message count of muted streams */
+ul.filters li.out_of_home_view:not(.active-filter) .stream-with-count .unread_count {
+  display: none !important;
+}
