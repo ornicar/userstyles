@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Lichess No Berserk
+@namespace      github.com/ornicar/userstyles
+@homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.no-berserk.user.css
+@version        1.0.0
+@description    On lichess.org, hide the berserk button.
+@author         github.com/ornicar
+==/UserStyle== */
+
+@-moz-document domain("lichess.org") {
+  button.go-berserk {
+    display: none;
+  }
+}
