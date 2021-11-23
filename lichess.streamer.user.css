@@ -16,11 +16,11 @@
     grid-template-areas: 'user-top .' 'board .' 'board mat-top'  'board expi-top'  'board moves'  'board controls'  'board expi-bot'  'board mat-bot' 'board .'  'user-bot .'  'kb-move .';
     margin-top: -.5em;
   }
-  .round__app .rclock-top {
+  .round__app .rclock-top, .round__app .rclock-bottom {
     grid-area: 1 / 1 / 2 / 2;
   }
   .round__app .rclock-bottom {
-    grid-area: 10 / 1 / 10 / 2;
+    transform: translateY(calc(var(--cg-height) + 30px));
   }
   .round__app .round__app__table {
     grid-area: 4 / 2 / 6 / 3;
@@ -39,7 +39,7 @@
     display: none;
   }
   .rclock .time {
-    font-size: 2em;
+    font-size: 2em !important;
     line-height: 30px;
     background: none;
   }
