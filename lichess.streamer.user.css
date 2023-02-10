@@ -2,20 +2,21 @@
 @name           Lichess Streamer Layout
 @namespace      github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.streamer.user.css
-@version        1.1.0
+@version        1.1.1
 @description    On lichess.org games, puts usernames and clocks around board for easier screen capture
 @author         github.com/ornicar
 ==/UserStyle== */
 
 @-moz-document domain("lichess.org") {
 
-@media (min-width: 800px), (orientation: landscape) {
-  .round__app {
-    grid-template-columns: minmax(calc(70vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px);
-    grid-template-rows: 30px 1fr auto min-content auto auto min-content auto 1fr 30px;
-    grid-template-areas: 'user-top .' 'board .' 'board mat-top'  'board expi-top'  'board moves'  'board controls'  'board expi-bot'  'board mat-bot' 'board .'  'user-bot .'  'kb-move .';
-    margin-top: -.5em;
-  }
+	@media (min-width: 800px), (orientation: landscape) {
+	.round__app {
+		grid-template-columns: minmax(calc(70vmin * var(--board-scale)), calc(100vh * var(--board-scale) - calc(var(--site-header-height) + var(--site-header-margin)) - 3rem)) minmax(240px, 400px);
+		grid-template-rows: 30px 1fr auto min-content auto auto min-content auto 1fr 30px;
+		grid-template-areas: 'user-top .' 'board .' 'board mat-top'  'board expi-top'  'board moves'  'board controls'  'board expi-bot'  'board mat-bot' 'board .'  'user-bot .'  'kb-move .';
+		margin-top: -.5em;
+		}
+	}
   .round__app .rclock-top, .round__app .rclock-bottom {
     grid-area: 1 / 1 / 2 / 2;
   }
@@ -54,6 +55,4 @@
 
 #top .site-buttons a[title="Moderation"] {
   display: none;
-}
-
 }
