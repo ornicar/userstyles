@@ -2,7 +2,7 @@
 @name           Lichess Streamer Layout
 @namespace      github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.streamer.user.css
-@version        1.1.1
+@version        1.1.0
 @description    On lichess.org games, puts usernames and clocks around board for easier screen capture
 @author         github.com/ornicar
 ==/UserStyle== */
@@ -54,4 +54,6 @@
 
 #top .site-buttons a[title="Moderation"] {
   display: none;
+}
+
 }
