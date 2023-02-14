@@ -124,6 +124,21 @@ body.dark { background: #161512; }
   .ruser a {
     flex: none;
   }
+
+  /* Move puzzle board down to match main game board (ornicar/userstyles#4) */
+  main.puzzle {
+    margin-top: calc(30px - 0.5em);
+  }
+
+  /* Horizontally align board between different views (game vs puzzle) */
+  cg-container {
+    right: auto;
+    left: 0px;
+  }
+
+  .analyse__player_strip, .rclock {
+    margin-right: calc(100% - var(--cg-width));
+  }
 }
 
 #top .site-buttons a[title="Moderation"] {
