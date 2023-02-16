@@ -2,12 +2,86 @@
 @name           Lichess Streamer Layout
 @namespace      github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.streamer.user.css
-@version        1.1.0
+@version        1.1.2
 @description    On lichess.org games, puts usernames and clocks around board for easier screen capture
 @author         github.com/ornicar
 ==/UserStyle== */
 
 @-moz-document domain("lichess.org") {
+/* Change background to fixed color to allow blending into custom stream overlays */
+body { background: #EDEBE9; }
+body.dark { background: #161512; }
+
+/* Display board above clock drop shadows*/
+.round__app__board {
+  z-index: 2;
+}
+
+/* Adjustments to wide layout */
+@media (min-width: 1260px) {
+  /* Hide scrollbar and make board larger */
+  body.playing {
+    /* TODO: Might need to add extra adjustments for small v-heights */
+    height: 100vh;
+    overflow: hidden !important;
+
+    /* Remove 2vmin bottom margin */
+    margin: 0px;
+    padding: 0px;
+    --zoom: 95 !important;
+  }
+
+  /* Make clocks bigger */
+  .rclock .time {
+    /*
+     * TODO: needs !important because of setting later on
+     * This should be refactored at some point when the narrower
+     * layout gets updates
+     */
+    line-height: 40px !important;
+    height: 40px;
+    min-width: 9rem;
+    justify-content: center;
+    padding: 0px 1rem;
+  }
+
+  /*
+   * Re-align the top "more time" plus button
+   * to vertically center on expanded clock
+   */
+  .rclock-top .time, .rclock-top a.moretime {
+    margin-top: -10px;
+  }
+
+  /* Layout to re-align board */
+  .round {
+    --chat-top-margin: calc(30px - 0.5rem);
+    grid-template-areas: "side app app" "uchat app app";
+    grid-template-rows: calc(var(--chat-top-margin) + var(--cg-height)) 30px;
+    grid-row-gap: 0;
+  }
+
+  /* Remove underboard scoresheet */
+  .round__underboard {
+    display: none;
+  }
+
+  /* Re-align left sidebar to top of board */
+  .round__side {
+    margin-top: var(--chat-top-margin);
+  }
+
+  /* Vertically center list of spectators underneath chat */
+  .round__underchat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .chat__members {
+    height: auto !important;
+  }
+}
 
 @media (min-width: 800px), (orientation: landscape) {
   .round__app {
@@ -49,6 +123,21 @@
   }
   .ruser a {
     flex: none;
+  }
+
+  /* Move puzzle board down to match main game board (ornicar/userstyles#4) */
+  main.puzzle {
+    margin-top: calc(30px - 0.5em);
+  }
+
+  /* Horizontally align board between different views (game vs puzzle) */
+  cg-container {
+    right: auto;
+    left: 0px;
+  }
+
+  .analyse__player_strip, .rclock {
+    margin-right: calc(100% - var(--cg-width));
   }
 }
 
