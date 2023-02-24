@@ -12,6 +12,12 @@
 body { background: #EDEBE9; }
 body.dark { background: #161512; }
 
+@media (prefers-color-scheme: dark) {
+    body.system {
+        background: #161512;
+    }
+}
+
 /* Display board above clock drop shadows*/
 .round__app__board {
   z-index: 2;
