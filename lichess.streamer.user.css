@@ -34,7 +34,6 @@ body.dark { background: #161512; }
     /* Remove 2vmin bottom margin */
     margin: 0px;
     padding: 0px;
-    --zoom: 95 !important;
   }
 
   /* Make clocks bigger */
