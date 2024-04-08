@@ -2,7 +2,7 @@
 @name           Lichess Streamer Layout
 @namespace      github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.streamer.user.css
-@version        1.1.2
+@version        1.1.3
 @description    On lichess.org games, puts usernames and clocks around board for easier screen capture
 @author         github.com/ornicar
 ==/UserStyle== */
@@ -11,6 +11,9 @@
 /* Change background to fixed color to allow blending into custom stream overlays */
 body { background: #EDEBE9; }
 body.dark { background: #161512; }
+
+body > header { background: transparent; border: none; backdrop-filter: none; }
+
 
 @media (prefers-color-scheme: dark) {
     body.system {
