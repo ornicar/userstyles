@@ -12,8 +12,22 @@
 body { background: #EDEBE9; }
 body.dark { background: #161512; }
 
-body > header { background: transparent; border: none; backdrop-filter: none; }
+body > header {
+    background: transparent;
+    border: none;
+    backdrop-filter: none;
+    position: absolute;
+}
 
+body > header.hide {
+    transform: none;
+}
+
+body > header.hide #topnav, body > header.hide .dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
+}
 
 @media (prefers-color-scheme: dark) {
     body.system {
