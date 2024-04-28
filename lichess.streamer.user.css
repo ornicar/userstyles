@@ -94,6 +94,7 @@ body.dark { background: #161512; }
     grid-template-rows: 30px 1fr auto min-content auto auto min-content auto 1fr 30px;
     grid-template-areas: 'user-top .' 'board .' 'board mat-top'  'board expi-top'  'board moves'  'board controls'  'board expi-bot'  'board mat-bot' 'board .'  'user-bot .'  'kb-move .';
     margin-top: .2em;
+    margin-bottom: -.5em;
   }
   .round__app .rclock-top, .round__app .rclock-bottom {
     grid-area: 1 / 1 / 2 / 2;
