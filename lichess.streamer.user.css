@@ -43,11 +43,11 @@ body.dark { background: #161512; }
      * This should be refactored at some point when the narrower
      * layout gets updates
      */
-    line-height: 40px !important;
-    height: 40px;
-    min-width: 9rem;
+    line-height: 36px !important;
+    height: 36px;
+    min-width: 8rem;
     justify-content: center;
-    padding: 0px 1rem;
+    padding: 0px 0rem;
   }
 
   /*
@@ -55,14 +55,14 @@ body.dark { background: #161512; }
    * to vertically center on expanded clock
    */
   .rclock-top .time, .rclock-top a.moretime {
-    margin-top: -10px;
+    margin-top: 0px;
   }
 
   /* Layout to re-align board */
   .round {
     --chat-top-margin: calc(30px - 0.5rem);
     grid-template-areas: "side app app" "uchat app app";
-    grid-template-rows: calc(var(--chat-top-margin) + var(--cg-height)) 30px;
+    grid-template-rows: calc(var(--chat-top-margin) + var(---cg-height)) 30px;
     grid-row-gap: 0;
   }
 
@@ -99,7 +99,7 @@ body.dark { background: #161512; }
     grid-area: 1 / 1 / 2 / 2;
   }
   .round__app .rclock-bottom {
-    transform: translateY(calc(var(--cg-height) + 30px));
+    transform: translateY(calc(var(---cg-height) + 30px));
   }
   .round__app .round__app__table {
     grid-area: 4 / 2 / 6 / 3;
@@ -118,11 +118,12 @@ body.dark { background: #161512; }
     display: none;
   }
   .rclock .time {
-    font-size: 2em !important;
+    font-size: 1.7em !important;
     line-height: 30px;
     background: none;
   }
   .ruser {
+    font-size: 1.4em ;
     padding: 0 .3em;
     line-height: 30px;
   }
