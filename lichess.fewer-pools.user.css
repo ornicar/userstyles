@@ -2,14 +2,100 @@
 @name           Lichess Fewer lobby pools
 @namespace      https://github.com/ornicar/userstyles
 @homepageURL    https://raw.githubusercontent.com/ornicar/userstyles/master/lichess.fewer-pools.user.css
-@version        1.0.0
+@version        2.0.0
 @license        MIT
 @description    On lichess.org, disable some lobby pool buttons
 @author         github.com/ornicar
+@preprocessor   stylus
+@var  checkbox  disable1       "Disable: 1+0"        1
+@var  checkbox  disable2       "Disable: 2+1"        0
+@var  checkbox  disable3       "Disable: 3+0"        1
+@var  checkbox  disable4       "Disable: 3+2"        0
+@var  checkbox  disable5       "Disable: 5+0"        0
+@var  checkbox  disable6       "Disable: 5+3"        0
+@var  checkbox  disable7       "Disable: 10+0"       0
+@var  checkbox  disable8       "Disable: 10+5"       0
+@var  checkbox  disable9       "Disable: 15+10"      0
+@var  checkbox  disable10      "Disable: 30+0"       0
+@var  checkbox  disable11      "Disable: 30+2"       0
 ==/UserStyle== */
+@-moz-document domain("lichess.org") {
+    .lpools {
+        if disable1==1 {
+            [data-id="1+0"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
 
-.lpools > [data-id="1+0"],
-.lpools > [data-id="3+0"] {
-    opacity: 0.3;
-    pointer-events: none;
+        if disable2==1 {
+            [data-id="2+1"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable3==1 {
+            [data-id="3+0"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable4==1 {
+            [data-id="3+2"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable5==1 {
+            [data-id="5+0"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable6==1 {
+            [data-id="5+3"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable7==1 {
+            [data-id="10+0"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable8==1 {
+            [data-id="10+5"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable9==1 {
+            [data-id="15+10"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable10==1 {
+            [data-id="30+0"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+
+        if disable11==1 {
+            [data-id="30+20"] {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+    }
 }
